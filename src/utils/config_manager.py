@@ -35,7 +35,7 @@ class DREAMArguments:
 
     # Optimization parameters
     zo_eps: float = 1e-3  # Zeroth-order perturbation magnitude
-    alpha: float = 0.15  # Temperature scaling parameter for prompt sampling
+    alpha: float = 0.3  # Temperature scaling parameter for prompt sampling
     gamma: float = 1.2  # Weight for historical gradients in gradient estimation
     temperature: float = 0.8  # Minimum sampling temperature during prompt generation
 
@@ -119,7 +119,7 @@ class DREAMArguments:
         train_batch_size: int = 32
         eval_batch_size: int = 128
         gamma: float = 1.2
-        alpha: float = 0.15
+        alpha: float = 0.3
         top_k: Optional[int] = 200
         similarity_weight: float = 0.5
         adaptive_similarity: bool = True
